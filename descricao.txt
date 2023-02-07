@@ -1,0 +1,6 @@
+Jogo da forca feito com as linguagens de marcação HTML, CSS e a de programação JavaScript, adjunto ao Bootstrap. 
+Feito do zero personalizado com minhaas características, ou melhor, com meu rosto rsrs. Venha se Divertir também!
+Abaixo a forma de como baixa-lo e estartá-lo para assim ficar de olho no código e se divertir.
+
+
+https://www.youtube.com/watch?v=layAF1DbJE8&list=PLUPt90PJkVdU5kHy_QHmJi0MY_Zgw7CJV&index=13

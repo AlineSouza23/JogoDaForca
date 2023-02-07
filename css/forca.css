@@ -1,0 +1,497 @@
+*{
+    /*start inicial padrão, boas práticas*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100vw; /* vw quando é largura */
+    height: 90vh; /* vh quando é height */
+    margin-top: 10px; /* margem da tela */
+      background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* cor do fundo da página */
+    font-family: Comunication; /*Usando fonte Ballon que foi declarada no font face */
+}
+.container{ /* chamando a classe container com ponto pois é classe e não ID */
+display: flex; /* para direcionar o justify-content */
+justify-content: center; /* para deixar a forca no centro */
+align-items: center; /* alinhar tudo no centro */
+flex-wrap: wrap; /* garantir que todos os elementos estarão na horizontal */
+flex-direction: column; /* para deixar cada div em colunas */
+}
+#imagem{ /*usando # pois no html está com ID e não como classe */
+    background-image: url('../img/forquinha.png'); /*adicionando imagem da forca*/
+    width: 252px; /* largura */
+    height: 303px; /* altura */
+    background-repeat: no-repeat; /* para não repetir a imagem */
+    
+  }
+#palavra-secreta{
+  display: flex; /* para alinhar o teclado de letras */
+  flex-direction: row; /* para alinhar na hotizontal */
+  justify-content: center; /* para alinhar no centro */
+  align-items: center; /* itens o centro */
+  font-size: 1em; /* fonte para as letras */
+  margin-top: 30px; /* espaçamento entre o texto e a imagem */
+  
+}
+@font-face { /* Fazendo uma fonte com o nome de Ballon */
+    font-family: Ballon;
+    src: url('../fontes/BALLOON\ DREAMS.ttf');
+  }
+  @font-face {/* Fazendo uma fonte com nome Comunication */
+    font-family: Comunication;
+    src: url('../fontes/Comication.ttf');
+  }
+  @font-face {/* Fazendo uma fonte com nome Olive */
+    font-family: Oliver;
+    src: url('../fontes/Olive\ Days.otf');
+  }
+  .letras{
+    width: 20px; /* largura de uma letra para outra */
+    text-align: center; /* centralizar texto no centro */
+    border-bottom: 6px solid rgb(0, 0, 0);
+    color: black; /* cor branca */
+    padding: 0px; /* obter espaçamento entre as letras */
+    margin-left: 4px; /* elas para direita adjunto ao padding */
+    margin-right: 14px;  /* elas para esquerda adjunto ao padding */
+  font-weight: bold; /* deixar letra em negrito */
+  font-size: 43px; /* deixa tamanho maior */
+  
+  
+ }
+  #teclado{
+    margin-top: 20px; /* espaçamento entre o teclado */
+  }
+   #tecla-A{ /* modificando tecla A */
+     box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+     font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+     color: black; /* cor da letra como preto */
+     font-weight: 50px; /* tamanho da letra */
+  }
+
+#tecla-B{ /* modificando tecla B */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-C{ /* modificando tecla C*/
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-D{ /* modificando tecla D */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-E{ /* modificando tecla E */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-F{ /* modificando tecla F */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-G{  /* modificando tecla G */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-H{ /* modificando tecla H */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-I{ /* modificando tecla I */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-J{ /* modificando tecla J */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-K{ /* modificando tecla K */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-L{ /* modificando tecla L */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-M{ /* modificando tecla M */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-N{ /* modificando tecla N */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-O{ /* modificando tecla O */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-P{ /* modificando tecla P */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-Q{ /* modificando tecla Q */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-R{ /* modificando tecla R */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-S{ /* modificando tecla S */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-T{ /* modificando tecla T */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-U{ /* modificando tecla U */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-V{ /* modificando tecla V */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-W{ /* modificando tecla W */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-X{ /* modificando tecla X */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-Y{ /* modificando tecla Y */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+#tecla-Z{ /* modificando tecla Z */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+}
+.modal {
+  background-color: black;
+
+}
+
+  .teclas button{ /* modificando os buttons */
+    width: 24px ;/* largura de 24px */
+    height: 24px; /* altura de 24 para ficar coerente também  */
+    margin: 2px; /* espaçamento entre um e outro */
+    margin-bottom: 5px; /* espaçamento entre um e outro de cima pra baixo */
+    cursor: pointer; /* para virar uma mãozinha no cursor do mouse */
+    box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+   border-radius: 8px; /* deixa r aborda mais arredondada */
+   border: 1px solid black solid 2px; /* deixar a borda da cor preta */
+  
+  }/*assim que o botão for selecionado, ele fica desabilitado para não ser clicado novamente*/
+  .teclas button:disabled{
+    cursor: not-allowed;
+  }
+  .teclas button:hover{ /* hover para quando o cursor do mouse se aproximar do botão */
+    transform: scale(1.3); /* zoom de 1.3 na tecla */
+
+  }
+  #categoria{
+    margin-top: 30px; /* obter um espaço entre teclado e a categoria */
+  }
+  /* em midia query o mínimo de uma tela mobile é de 320 */
+
+@media (min-width: 321px) { /* assumir todas as edições abixo quando estiver menor que 321px */
+  .teclas button{
+    width: 25px ;/* largura de 24px */
+    height: 25px; /* altura de 24 para ficar coerente também  */
+  }
+  #categoria{ /* mudar o tamanho da fonte quando chegar em 321px */
+    font-size: 1.3em; /* letra almentar */
+  }
+}
+@media (min-width: 376px) { /* assumir todas as edições abixo quando estiver menor que 376px */
+  .teclas button{
+    width: 30px ;/* largura de 30px */
+    height: 30px; /* altura de 30px para ficar coerente também  */
+  }
+  #categoria{ /* mudar o tamanho da fonte quando chegar em 376px */
+    font-size: 1.3em;
+  }
+  #palavra-secreta{
+ font-size: 1.5em; /* almentar tamanho das palavras secretas */
+ 
+}
+.letras{
+  width: 18px; /* largura de 18px */
+}
+}
+@media (min-width: 426px) { /* assumir todas as edições abixo quando estiver menor que 426px */
+  .teclas button{
+    width: 36px ;/* largura de 36px */
+    height: 36px; /* altura de 36px para ficar coerente também  */
+  }
+  #categoria{ /* mudar o tamanho da fonte quando chegar em 426px */
+    font-size: 1.5em;
+  }
+  #palavra-secreta{
+ font-size: 1.6em; /* almentar tamanho das palavras secretas */
+ 
+}
+.letras{
+  width: 20px; /* largura de 20px */
+}
+}
+@media (min-width: 769px) { /* assumir todas as edições abixo quando estiver menor que 426px */
+  .teclas button{
+    width: 65px ;/* largura de 68px */
+    height: 65px; /* altura de 68px para ficar coerente também  */
+  }
+  #categoria{ /* mudar o tamanho da fonte quando chegar em 426px */
+    font-size: 125px;
+
+  }
+  #palavra-secreta{
+ font-size: 125px; /* almentar tamanho das palavras secretas */
+ 
+ 
+}
+.letras{
+  width: 35px; /* largura de 35px */
+} #tecla-A{ /* modificando tecla A */
+  box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+  font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+  color: black; /* cor da letra como preto */
+  font-weight: 50px; /* tamanho da letra */
+  font-size: 30px; /* tamanho da fonte 30px */
+}
+
+#tecla-B{ /* modificando tecla B */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-C{ /* modificando tecla C*/
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-D{ /* modificando tecla D */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-E{ /* modificando tecla E */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-F{ /* modificando tecla F */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-G{  /* modificando tecla G */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-H{ /* modificando tecla H */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-I{ /* modificando tecla I */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-J{ /* modificando tecla J */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-K{ /* modificando tecla K */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-L{ /* modificando tecla L */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-M{ /* modificando tecla M */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-N{ /* modificando tecla N */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-O{ /* modificando tecla O */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-P{ /* modificando tecla P */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-Q{ /* modificando tecla Q */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-R{ /* modificando tecla R */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-S{ /* modificando tecla S */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-T{ /* modificando tecla T */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-U{ /* modificando tecla U */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-V{ /* modificando tecla V */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+
+}
+#tecla-W{ /* modificando tecla W */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-X{ /* modificando tecla X */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-Y{ /* modificando tecla Y */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#tecla-Z{ /* modificando tecla Z */
+box-shadow: 7px 3px 10px rgb(0, 0, 0); /* para deixar um esfumado atras */
+font-family: Oliver; /*Usando fonte Oliver que foi declarada no font face */
+color: black; /* cor da letra como preto */
+font-weight: 50px; /* tamanho da letra */
+font-size: 30px; /* tamanho da fonte 30px */
+}
+#btnReiniciar{
+ 
+  font-size: 30px; /* tamanho da fonte 30px */
+
+}
+}
