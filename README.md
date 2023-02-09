@@ -1,7 +1,8 @@
 
 <span align="center">
 
-##  Hellooo Helloo World! 👋 
+##   Jogo da Forca personalizado com o meu rostinho, feito com HTML, CSS, JavaScript e um pouco de Bootstrap.
+
 
 </span>
 
@@ -11,9 +12,7 @@
 </div>
 
 
-<p align="center">
- Jogo da Forca personalizado com o meu rostinho, feito com HTML, CSS, JavaScript e um pouco de Bootstrap.
-</p>
+
 
 
 
