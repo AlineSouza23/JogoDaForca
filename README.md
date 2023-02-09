@@ -12,7 +12,7 @@
 
 
 <p align="center">
- Sobre o Jogo da Forca 
+ Jogo da Forca personalizado com o meu rostinho, feito com HTML, CSS, JavaScript e um pouco de Bootstrap.
 </p>
 
 
